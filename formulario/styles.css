@@ -1,0 +1,61 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+.card{
+    border-color: black;
+    border-style: solid;
+}
+
+.head{
+    background-color: brown;
+    justify-content: center;
+}
+
+.TituloF{
+    color: antiquewhite;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    font-size: xx-large;
+}
+
+h1{
+    color: black;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    font-size: xx-large;
+}
+
+.body{
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+}
+
+h2{
+    font-size: larger;
+}
+
+input{
+    padding-bottom: 1rem;
+}
+
+.footer{
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+td{
+    border:1px solid;
+    padding: 0px;
+}
+

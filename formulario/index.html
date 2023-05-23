@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+    <script src="list.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <article class="card">
+            <header class="head">
+                <h1 class="TituloF">Formulario de registro</h1>
+            </header>
+
+
+            <div class="body">
+                <h2>E-mail:</h2>
+                <input type="email" id="emailcompleto" onblur="verifyRequired(this)">
+
+                <h2>Nombre completo:</h2>
+                <input type="text" id="nombrecompleto" onblur="verifyRequired(this)">
+
+                <h2>Fecha de nacimiento:</h2>
+                <input type="date" id="fnacimiento" onblur="verifyRequired(this)">
+
+                <h2>Sexo:</h2>
+                <select name="select" id="value">
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
+                </select>
+
+                <h2>Intereses:</h2>
+                <input type="checkbox" id="interests" value= '1' name="interests">
+                <label for="computers">Computers</label>
+                <br>
+                <input type="checkbox" id="interests" value= '2' name="interests">
+                <label for="sports">Sports</label>
+                <br>
+                <input type="checkbox" id="interests" value= '3' name="interests">
+                <label for="games">Games</label>
+                <br>
+                <input type="checkbox" id="interests" value= '4' name="interests">
+                <label for="music">Music</label>
+                <br>
+            </div>
+
+            <footer class="footer">
+                <input type="submit" value="Registrar"
+                button onclick="register()" class="form-button">
+            </footer>
+        </article>
+        <div>
+            <h1>Lista de usuarios registrados</h1>
+            <table id="table-users" class="table">
+                <tr>
+                    <td>Nombre</td>
+                    <td>Correo</td>
+                    <td>Fecha de nacimiento</td>
+                    <td>Sexo</td>
+                </tr>
+                <tr>
+                    <td>Peter Parker</td>
+                    <td>spiderman@gmail.com</td>
+                    <td>2000-11-01</td>
+                    <td>Varon</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
